@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KeuCatat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <!-- <img src="\Users\user\Downloads\KueCatat\img\k.png" /> -->
+            <img src="/img/k.png" >
+            <span>KeuCatat</span>
+          </div>
+          <ul>
+            <li><a href="#" class="active" id="nav-home">Home</a></li>
+            <li><a href="#" id="nav-history">History</a></li>
+            <li><a href="#" id="nav-edit">Edit</a></li>
+          </ul>
+        </div>
+    </nav>
+      
+
+  <div class="container">
+    <!-- Home Section -->
+    <section id="home-section" class="section">
+      <h1>KeuCatat</h1>
+      <div class="balance">
+        <h2>Saldo: Rp <span id="balance">0</span></h2>
+        <div class="summary">
+          <p>Pemasukan: <span id="income">Rp 0</span></p>
+          <p>Pengeluaran: <span id="expense">Rp 0</span></p>
+        </div>
+      </div>
+      <form id="transaction-form">
+        <input type="text" id="description" placeholder="Deskripsi transaksi" required />
+        <input type="number" id="amount" placeholder="Jumlah (+ pemasukan, - pengeluaran)" required />
+        <button type="submit">Tambah</button>
+      </form>
+    </section>
+
+    <!-- History Section -->
+    <section id="history-section" class="section hidden">
+      <h2>Riwayat Transaksi</h2>
+      <ul id="transaction-list"></ul>
+    </section>
+
+    <!-- Edit Section -->
+    <section id="edit-section" class="section hidden">
+      <h2>Edit Transaksi</h2>
+      <ul id="edit-list"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
